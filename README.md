@@ -1,5 +1,6 @@
 # projectEuler
 Solving problems from Project Euler website. <br>
+All credit for the formulated problems goes to the Project Euler initiative (projecteuler.net).
 
 <br>
 Problem #1: <br>
