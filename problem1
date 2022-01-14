@@ -1,0 +1,29 @@
+function sumMultiples(x, y, z) {
+		let multipleX = [];
+    for(let i = 1; i < z; i++) {
+    		if(i % x == 0) {
+        	multipleX.push(i);
+        }
+    }
+    console.log(multipleX);
+    
+    let multipleY = [];
+    for(let i = 1; i< z; i++) {
+    		if(i % y == 0) {
+        	multipleY.push(i);
+        }
+    }
+    console.log(multipleY);
+    
+   let multiplesArr = [...multipleX,...multipleY];
+   let uniqueArr = [...new Set(multiplesArr)].sort((a, b) => a - b);
+   console.log(uniqueArr);
+    
+    let multiplesSum = uniqueArr.reduce(function(acc, val) { return acc + val; }, 0);
+    console.log(multiplesSum);
+    
+    document.write(multiplesSum)  //show result on page
+    
+}
+
+sumMultiples(3, 5, 1000);
