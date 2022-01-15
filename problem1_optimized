@@ -1,0 +1,12 @@
+// Create variable to hold the seeked value.
+let sumMultiples = 0;
+
+// Iterate to find the numbers that are perfect dividers to 3 & 5 below 1000.
+	for (let i = 1; i < 1000; i++) {
+  		if(i % 3 == 0 || i % 5 == 0) {
+      		sumMultiples = sumMultiples + i;
+      }
+  }
+  
+  // Display the result in the console (233168).
+  console.log(sumMultiples);
