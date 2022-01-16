@@ -1,5 +1,5 @@
 function printPrimes(n) {
-	let factors = [];
+   let factors = [];
    
   /* since 2 is the only even prime, it's easier to factor it out 
    * separately from the odd factor loop (for loop doesn't need to 
@@ -14,17 +14,18 @@ function printPrimes(n) {
    * interpreted as false. "!" returns the opposite boolean, so this 
    * means that '!(num & 1)' is true when the num is not odd).
    */
-  while(!(n & 1)) {
-  		factor.push(2);
+   
+   while(!(n & 1)) {
+      factor.push(2);
       n /= 2;
   }
   
   // 'i*i <= n' is faster than 'i <= Math.sqrt(n)'
   for(let i = 3; i*i <= n; i+=2) {
-  		while(!(n % i)) {
-      	factors.push(i);
-        n /= i;
-      }
+  	while(!(n % i)) {
+      	  factors.push(i);
+          n /= i;
+        }
   }
   
   /* if the number is already prime, then this adds it to factors so
