@@ -20,4 +20,8 @@ The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor
 <br>
 <b>Problem #4:</b> <i>Largest palindrome product</i> <br>
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99. Find the largest palindrome made from the product of two 3-digit numbers.
+<br>
+<br>
+<b>Problem #5:</b> <i>Largest palindrome product</i> <br>
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
