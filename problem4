@@ -1,20 +1,19 @@
-// Checking if a number is a Palindrome.
 function isPalindrome(n) {
-	return parseFloat(n.toString().split('').reverse().join('')) * Math.sign(n) == n;
+  return parseFloat(n.toString().split('').reverse().join('')) * Math.sign(n) == n;
 }
 
 var maxPal = 0;
 
 // Iterating through the products of 3 digit numbers.
-for(var i = 999; i >= 100; i--) {
-		for(var j = i; j >= 100; j--) {
-    		var prod = i * j;
-        
-        // Checking if the produc is a Palindrome and actualizing the biggest number.
-        if(isPalindrome(prod) && prod > maxPal) {
-        			maxPal = prod;
-        }
+for (var i = 999; i >= 100; i--) {
+  for (var j = i; j >= 100; j--) {
+    var prod = i * j;
+
+    // Checking if the produc is a Palindrome and actualizing the biggest number.
+    if (isPalindrome(prod) && prod > maxPal) {
+      maxPal = prod;
     }
+  }
 }
 // Result is 906609.
 console.log(maxPal);
