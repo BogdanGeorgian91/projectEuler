@@ -1,0 +1,16 @@
+let sum = 0;
+let x1 = 1;
+let x2 = 2;
+let x3 = 3;
+
+while (x2 < 4000000) {
+  if (x2 % 2 == 0) {
+    sum = sum + x2;
+  }
+  x1 = x2;
+  x2 = x3;
+  x3 = x1 + x2;
+}
+
+// Result = 4613732.
+console.log(sum);
