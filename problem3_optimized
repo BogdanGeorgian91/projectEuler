@@ -1,0 +1,22 @@
+let num = 600851475143;
+let fact = 2;
+let max = 1;
+
+// We remove/extract factors from "num" starting from 2 until no factors are left.
+while(num != 1) {
+	// If "fact" is a true factor of "num" then check if we have a maximum.
+  if((num % fact == 0) && (fact > max)) {
+  		max = fact;
+  }
+  
+  // Remove all the powers of "fact" from the number.
+  while(num % fact == 0) {
+  	num = num/fact;
+  }
+  
+  // For next iteration try higher factors.
+  fact++;
+}
+
+// Result is 6857.
+console.log(max);
