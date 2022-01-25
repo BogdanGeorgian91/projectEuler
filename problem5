@@ -1,0 +1,19 @@
+let num = 0;
+
+for (let i = 1; i < Infinity; i++) {
+
+let error = false;
+
+		for( let j = 1; j <= 20; j++) {
+    
+    if(i % j !== 0) {
+     error = true;
+    }
+    
+    }
+	if(!error) {
+  	num = i;
+    break;
+  }
+}
+console.log(num);
