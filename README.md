@@ -27,11 +27,8 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 <br>
 <br>
 <b>Problem #6:</b> <i>Sum square difference</i> <br>
-The sum of the squares of the first ten natural numbers is: 1<sup>2+2<sup>2+...10<sup>2 = 385. <br>
-
-The square of the sum of the first ten natural numbers is,
-
-Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is .
-
+The sum of the squares of the first ten natural numbers is: 1<sup>2</sup>+2<sup>2</sup>+...10<sup>2</sup> = 385. <br>
+The square of the sum of the first ten natural numbers is: (1+2+...+10)<sup>2</sup>=55<sup>2</sup>=3025. <br>
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is: 3025 - 385 = 2640. <br>
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
