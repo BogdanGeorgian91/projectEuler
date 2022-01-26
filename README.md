@@ -24,4 +24,14 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 <br>
 <b>Problem #5:</b> <i>Smallest multiple</i> <br>
 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+<br>
+<br>
+<b>Problem #6:</b> <i>Sum square difference</i> <br>
+The sum of the squares of the first ten natural numbers is: 1<sup>2+2<sup>2+...10<sup>2 = 385. <br>
+
+The square of the sum of the first ten natural numbers is,
+
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is .
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
