@@ -1,0 +1,19 @@
+let x = [...Array(100)].map((_, i) => i + 1);
+console.log(x);
+
+let sumX = 0;
+for (let i = 0; i < x.length; i++) {
+  sumX += x[i];
+  sumXsquare = Math.pow(sumX, 2);
+}
+console.log(sumX);
+console.log(sumXsquare);
+
+let sumXx = 0;
+for (let i = 0; i < x.length; i++) {
+  let num = Math.pow(x[i], 2);
+  sumXx += num;
+}
+
+// Result is 25164150.
+console.log(sumXsquare - sumXx);
