@@ -1,0 +1,24 @@
+function checkPrime(number) {
+  if (number <= 1) {
+    return false;
+  } else {
+    for (let i = 2; i < number; i++) {
+      if (number % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
+let x = 2;
+let primeCounter = 0;
+
+while (primeCounter !== 10001) {
+  if (checkPrime(x)) primeCounter++;
+
+  if (primeCounter !== 10001) x++;
+}
+
+// Result is 104743.
+console.log(x, primeCounter);
