@@ -27,8 +27,22 @@ for (let i = 0; i < arr.length; i++) {
     arr[i + 12];
 
   prodArr.push(product);
-  console.log(prodArr);
-
-  let maxProd = Math.max(prodArr);
-  console.log(maxProd);
 }
+
+let uniqueArr = [...new Set(prodArr)];
+console.log(uniqueArr);
+
+
+// let maxProd = Math.max.apply(0, prodArr); 
+
+// console.log(prodArr);
+// let maxProd = Math.max.apply(0, prodArr); 
+
+let maxProd = 0;
+for(let i = 0; i<maxProd; i++) {
+    if(prodArr[i] > maxProd) {
+        maxProd = prodArr[i];
+    }
+}
+
+console.log(maxProd);
