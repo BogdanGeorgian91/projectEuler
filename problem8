@@ -3,13 +3,15 @@ let numbers =
 let arr = [];
 let prodArr = [];
 
+// String-ul fiind un ITERABLE putem itera cu FOR OF si bagam valorile intr-un sir.
 for (item of numbers) {
   arr.push(item);
 }
 
-// console.log(arr.length);
-// console.log(arr);
+// Sirul cu cele 1000 de cifre.
+console.log(arr);
 
+// Iteram pentru a face produsele a 13 cifre consecutive incepand de la primul numar.
 for (let i = 0; i < arr.length; i++) {
   let product =
     arr[i] *
@@ -26,23 +28,15 @@ for (let i = 0; i < arr.length; i++) {
     arr[i + 11] *
     arr[i + 12];
 
+  // Bagam produsele intr-un sir.
   prodArr.push(product);
 }
 
-let uniqueArr = [...new Set(prodArr)];
-console.log(uniqueArr);
+// Pastram doar valorile unice in sir si sortam numerele in ordine ascendenta.
+let uniqueArr = [...new Set(prodArr)].sort(function (a, b) {
+  return a - b;
+});
 
-
-// let maxProd = Math.max.apply(0, prodArr); 
-
-// console.log(prodArr);
-// let maxProd = Math.max.apply(0, prodArr); 
-
-let maxProd = 0;
-for(let i = 0; i<maxProd; i++) {
-    if(prodArr[i] > maxProd) {
-        maxProd = prodArr[i];
-    }
-}
-
-console.log(maxProd);
+// Numarul cautat (cel mai mare produs a 13 cifre consecutive din seria de 1000 de numere) va fi ultimul numar din sir.
+console.log(uniqueArr[uniqueArr.length - 1]);
+ 
