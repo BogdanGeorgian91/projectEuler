@@ -62,5 +62,10 @@ The four adjacent digits in the 1000-digit number that have the greatest product
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 <hr>
 
-
+<b>Problem #7:</b> <i>10001st prime</i> <br><br>
+A Pythagorean triplet is a set of three natural numbers, a < b < c, for which a2 + b2 = c2. <br>
+For example, 32 + 42 = 9 + 16 = 25 = 52. <br>
+There exists exactly one Pythagorean triplet for which a + b + c = 1000. <br>
+Find the product abc.
+<hr>
 
